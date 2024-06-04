@@ -1,0 +1,572 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+/*Inicio topo parte 1 */
+.Main-topo{
+    display: none;
+    justify-content: space-between;
+  
+}
+
+.titulo{
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.selta {
+    padding-top: 10px;
+}
+
+/*Fim topo parte 1 */
+
+
+
+
+/*Inicio Perfil parte 2 */
+
+
+.perfil-main{
+    display: flex;
+
+    gap: 50px;
+}
+
+.image_perfil>img {
+    width: 15vw;
+}
+.image_perfil{
+    padding: 20px;
+}
+.textos_perfil>h2{
+    font-size: 3rem;
+    padding-top: 40px;
+}
+
+.incremento{
+    margin-top: 50px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.editarperfil{
+    margin-left: 180px;
+background-color: #0c5757;
+width: 50%;
+border-radius: 5px;
+text-align: center;
+cursor: pointer;
+}
+
+/*Fim Perfil parte 2 */
+
+.juntarDiv{
+    display: flex;
+}
+
+
+/*estrelas parte 3 */
+
+.estrelas {
+    display: flex;
+    justify-content: center;
+}
+
+.estrelas>img {
+    width: 18vw;
+}
+
+/* fim das estrelas parte 3*/
+
+/* Leitura recente  parte 4*/
+
+.caixa-livro {
+    background-color: rgb(12, 87, 87);
+    height: 51vh;
+    width: 50vw;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.titulo {
+    padding-top: 20px;
+    padding-left: 26px;
+    font-size: 2rem;
+}
+
+.image-livros{
+    padding-top:100px;
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    padding-left: 80px;
+}
+
+.livros>img {
+    border-radius: 10px;
+}
+
+.livros-desk>img{
+    height: 26vh;
+    border-radius: 10px;
+}
+
+/* fim leitura recente parta 4*/
+
+
+/*inicio Disponivel para troca parte 5 */
+
+.disponivel {
+    margin-top: 20px;
+}
+
+.caixa-livro-disponivel{
+    background-color: #0c5757;
+    height: 52vh;
+    width: 50vw;
+    border-radius: 20px;
+}
+
+.image-livros-recente{
+    padding-top:100px;
+    display: flex;
+    gap: 54px;
+    padding: 15px;
+    padding-left: 17px;
+}
+.ghost{
+    border: 5px solid rgb(107, 104, 104);
+    width: 5vw;
+    height: 18vh;
+    border-radius: 10px;
+    background-color: rgb(36, 36, 35);
+}
+
+.ghost-dois{
+    border: 5px solid rgb(107, 104, 104);
+    width: 5vw;
+    height: 18vh;
+    border-radius: 10px;
+    background-color: rgb(36, 36, 35)
+}
+.tabela {
+    background-color: #476464;
+    height: 15vh;
+    width:45vw;
+    border-radius: 20px;
+    margin-left: 16px;
+}
+
+.numericos{
+    padding-left:  10px;
+    display: flex;
+    gap: 210px;
+    font-size: 2rem;
+}
+
+.ultimo{
+    margin-right: 200px;
+}
+
+.letras{
+    padding:5px ;
+    gap: 200;
+    display: flex;
+    gap: 80px;
+}
+
+.palavra-ultima{
+    margin-right:  0px;
+}
+
+/* fim disponível para troca */
+
+
+/* Comentario parte 5 */
+
+
+
+.comentario{
+    background-color: rgb(71, 69, 69);
+    width: 100vw;
+    height: vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.comentario-titulo{
+    padding: 10px;
+    font-size: 1.8rem;
+}
+
+
+.caixinha {
+  
+    border: 5px solid rgb(36, 18, 6);
+    width: 29px;
+    height: 5vh;
+    display: flex;
+}
+
+.divdacaixinha{
+    gap: 30px;
+    width: 17vw;
+    display: flex;
+}
+
+
+.caixa_comentrios {
+    height: 50vh;
+    background-color: transparent;
+    border: 2px solid #476464 ;
+    margin: 6px;
+    border-radius: 5px;
+}
+
+.comentario-pessoas{
+    background-color: transparent;
+    border: solid #0c5757;
+    height: 14vh;
+    margin: 8px;
+    border-radius: 3px;
+    display: flex;
+}
+
+.capa-comentario{
+    padding-top: 7px;
+    padding-left: 10px;
+}
+
+.nick {
+    display: flex;
+    gap: 20px;
+}
+
+.comentario-do-comentariok{
+    background-color: aquamarine;
+    margin-top: 10px;
+}
+
+.escrita {
+    background-color: transparent;
+    border: 2px solid rgb(56, 64, 72);
+    height: 5vh;
+    width: 80vw;
+}
+
+.titulo2{
+    
+    font-size: 3rem;
+    padding-left: 79px;
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.titulo3{
+    font-size: 3rem;
+    margin-top: 5px;
+    padding-left: 18px;
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+@media (max-width: 450px){
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+/*Inicio topo parte 1 */
+.Main-topo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo{
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.selta {
+    padding-top: 10px;
+}
+
+/*Fim topo parte 1 */
+
+
+/*Inicio Perfil parte 2 */
+.perfil-main{
+    display: flex;
+
+    gap: 20px;
+}
+
+.image_perfil{
+    padding: 4px;
+}
+
+.image_perfil{
+    padding-top: 40px;
+}
+.image_perfil>img{
+   
+    width:150px;
+}
+
+.textos_perfil>h2{
+    font-size: 2rem;
+}
+
+.incremento{
+    display: none;
+}
+/*Fim Perfil parte 2 */
+
+/*estrelas parte 3 */
+
+.estrelas {
+    display: flex;
+    justify-content: center;
+}
+
+.estrelas>img{
+    width: 200px;
+}
+/* fim das estrelas parte 3*/
+
+.juntarDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Leitura recente  parte 4*/
+
+.caixa-livro {
+    background-color: rgb(12, 87, 87);
+    height: 28vh;
+    width: 98%;
+    
+    border-radius: 20px;
+}
+
+.titulo {
+    padding-top: 2px;
+    padding-left: 60px;
+    font-size: 2rem;
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.image-livros{
+    padding-top:50px;
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    padding-left: 30px;
+}
+
+.image-livros-recente{
+    display: flex;
+    gap: 80px;
+}
+
+.livros>img {
+    border-radius: 10px;
+}
+
+.livros-desk{
+    display: none;
+}
+
+/* fim leitura recente parta 4*/
+
+
+/*inicio Disponivel para troca parte 5 */
+
+.disponivel {
+    margin-top: 20px;
+}
+
+.caixa-livro-disponivel{
+    background-color: #0c5757;
+    height: 34vh;
+    width: 98%;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.ghost{
+    display: none;
+    border: 5px solid rgb(107, 104, 104);
+    width: 18vw;
+    height: 12vh;
+    border-radius: 10px;
+    background-color: rgb(36, 36, 35);
+}
+
+.ghost-dois{
+    display: none;
+}
+ /* parte da tabela 2 */
+
+.tabela {
+    background-color: #476464;
+    height: 12vh;
+    width: 94%;
+    padding-right: 10px;
+    border-radius: 20px;
+}
+
+.numericos{
+    padding-left:  10px;
+    padding-right: 40px;
+    display: flex;
+    gap: 125px;
+    font-size: 2rem;
+}
+
+.nuemricos>.ultimo{
+    margin-right: 100px;
+}
+
+.letras{
+    
+    display: flex;
+    height: 40px;
+    width: 100%;
+}
+
+.palavra{
+  
+    width: 34%;
+}
+
+.titulo2{
+    
+}
+/* fim disponível para troca */
+
+.titulo2{
+    
+    font-size: 2rem;
+    padding-left: 30px;
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.titulo3{
+    font-size: 2rem;
+    margin-top: 5px;
+    padding-left: 18px;
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Comentario parte 5 */
+
+
+
+.comentario{
+    background-color: rgb(71, 69, 69);
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comentario-titulo{
+    padding: 10px;
+    font-size: 1.8rem;
+}
+
+.caixinha {
+    border: 5px solid rgb(36, 18, 6);
+    width: 29px;
+    height: 3vh;
+    display: flex;
+}
+
+.divdacaixinha{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imagecaixinha{
+    position: absolute;
+    top: 975px;
+}
+
+.caixa_comentrios {
+    height: 30vh;
+    background-color: transparent;
+    border: 5px solid #476464 ;
+    margin: 6px;
+    border-radius: 5px;
+}
+
+.comentario-pessoas{
+    background-color: transparent;
+    border: solid #476464;
+    height: 8vh;
+    margin: 8px;
+    border-radius: 3px;
+    display: flex;
+}
+
+.capa-comentario{
+    padding-top: 3px;
+    padding-left: 2px;
+}
+
+.nick {
+    display: flex;
+    gap: 20px;
+}
+
+.comentario-do-comentariok{
+    background-color: aquamarine;
+    margin-top: 10px;
+}
+
+.escrita {
+    background-color: transparent;
+    border: 3px solid rgb(56, 64, 72);
+    height: 3vh;
+    width: 67vw;
+}
+
+}
+
