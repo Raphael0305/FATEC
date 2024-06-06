@@ -1,0 +1,9 @@
+81. Faça um programa que preencha um vetor com 10 números reais, calcule e mostre a quantidade de números negativos e a soma dos números positivos desse vetor.
+
+2. Fazer um programa para ler um vetor de 10 posições e, em seguida, mostre todos os valores lidos juntamente com o maior, o menor e a média dos valores
+
+3. Fazer um programa para ler 5 valores e, em seguida, mostrar a posição onde se encontram o maior e o menor valor.
+
+4. Faça um programa que leia um vetor de 10 posições e verifique se existem valores iguais e os escreva na tela.
+
+5. Faça um programa que leia dois vetores de 10 posições e calcule outro vetor contendo, nas posições pares os valores do primeiro e nas posições impares os valores do segundo.
