@@ -27,8 +27,8 @@ for (int i=0; i <=9; i++){
 		 }
 	}
 cout << " \n";
-cout << "Quantidade  negativos"<< marcador << endl;
-cout << "Soma dos positivos "<< somador << endl;
+cout << "Quantidade  negativos: "<< marcador << endl;
+cout << "Soma dos positivos: "<< somador << endl;
 
 
 //for (int i=0; i <= 9; i++){

@@ -1,4 +1,4 @@
-81. Faça um programa que preencha um vetor com 10 números reais, calcule e mostre a quantidade de números negativos e a soma dos números positivos desse vetor.
+1. Faça um programa que preencha um vetor com 10 números reais, calcule e mostre a quantidade de números negativos e a soma dos números positivos desse vetor.
 
 2. Fazer um programa para ler um vetor de 10 posições e, em seguida, mostre todos os valores lidos juntamente com o maior, o menor e a média dos valores
 

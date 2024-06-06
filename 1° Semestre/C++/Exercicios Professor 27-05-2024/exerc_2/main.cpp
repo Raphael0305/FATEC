@@ -37,7 +37,7 @@ int media = somador / 10;
 
 
 cout << "Média dos numeros : " << media << "\n";
-cout << "Maior numero : " << maiorNumero << "\n";
-cout << "Menor Numero : " << menorNumero;	
+cout << "Maior numero : " << menorNumero << "\n";
+cout << "Menor Numero : " << maiorNumero;	
 	return 0;
 }
