@@ -268,7 +268,7 @@
 
 .infoFooter{
   background-color: rgb(29, 115, 139);
-  height: 60vh;
+  height: 56vh;
 }
 
 /* alinhar com titulo */
@@ -278,6 +278,7 @@
   flex-direction: column;
   text-align: start;
   margin-left: 74px;
+
 }
 
 /* alinhar com titulo*/
