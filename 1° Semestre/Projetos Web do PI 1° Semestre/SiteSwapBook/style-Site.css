@@ -82,7 +82,7 @@
         }
         /* para descolar o carousel do topo */
         .invisivel{
-          background-color: blue;
+      
           width: 100%;
           height: 10vh;
         }
@@ -171,20 +171,16 @@
 
 @media only screen and (max-width: 768px){
   .recente{
-
+    
     margin-top: 50px;
-    height: 80vh;
+    height: 62vh;
     border-radius: 10px;
   }
   
   .main-cardez{
-    height: 68vh;
+    height: 50vh;
     gap: 10px;
-
-  
-
-
-    
+    margin-top: -30px; 
   }
 
   .dentroiamge{
@@ -220,7 +216,10 @@
 
 /* tamanho do container */
 .mainAutores{
+  
   height: 90vh;
+  width: 70%;
+  margin-left: 17%;
 }
 /* Tamanho do container filho  */
 .cardpai{
@@ -356,7 +355,7 @@ li>a{
 
   .infoFooter{
     background-color: rgb(29, 115, 139);
-    height: 70vh;
+    height: 100%;
   }
 
   .duvidas{
@@ -431,6 +430,7 @@ li>a{
         font-size: 3rem;
 
     }
+
 }
 
 /*FIM GENERO */
