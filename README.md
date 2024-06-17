@@ -6,4 +6,4 @@
 
 
 <h2>Descrição</h2>
-<p> Aqui irei guardar toda a minha trajetoria na FATEC</p>
+<p> Aqui irei guardar toda a minha trajetória na FATEC</p>
