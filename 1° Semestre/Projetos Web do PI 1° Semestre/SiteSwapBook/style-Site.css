@@ -1,5 +1,13 @@
 
+*{
+  font-family: "Raleway", sans-serif;
+}
 
+.alinha{
+ display: flex;
+ flex-direction: column;
+ align-items: ; 
+}
 /*recomendados*/
 
 .titulo {
@@ -27,10 +35,38 @@
 
     
   .destaques{   /*container recomendados*/
-    height: 63vh;
-    
+    width: 96%;
+    margin-top: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Tamanho da font do numero de qualidade  */
+  .medidorQualidade{
+    font-size: 1.9em;
+    margin-left: 40%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  /* move a estrela de qualidade do card */
+  .estrelaRecomendado{
+    margin-top: -4%;
   }
 
+  .TamanhoImageCard{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .ajusteRecomendado{
+    display: flex;
+    flex-direction: c;
+    gap: 10px;
+    margin-top: 20px;
+
+  }
   .cardes{  /*container cardes*/
 
     display: flex;
@@ -79,13 +115,19 @@
 
       .destaques{
         height: 100%;
+    
         }
+
         /* para descolar o carousel do topo */
         .invisivel{
       
           width: 100%;
           height: 10vh;
         }
+
+      .ajusteRecomendado{
+        flex-direction: column;
+      }
 
   }
   
@@ -106,12 +148,12 @@
     display: flex;
     justify-content: center;
     align-items: center;  
+
 }
 
 .generoImage{
     background-color: #123430;
     border: 5px solid #1E7364;
-    
     display: flex;
     align-items: center;
     border-radius: 10px;
@@ -121,15 +163,17 @@
     cursor: pointer;
     width: 190px;
     border-radius: 5px;
+    background-color: violet;
 }
 
 
 /* container de todas as imagens */
 .containerImage{
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left:50px ;
     width: 100%;
     height: 86%;
+
 }
 
 /* espaço da div terror e misterio */
@@ -144,6 +188,24 @@
     color: rgba(0, 255, 255, 0.736);
     font-size: 3rem;
 
+}
+
+@media only screen and (max-width: 768px){
+  .tituloGenero{
+   margin-top: -20%;
+
+  }
+
+  .containerImage{
+    margin-bottom: 20%;
+    height: auto;
+  }
+
+  .generoImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /*fim do genero */
@@ -166,7 +228,7 @@
 }
 /* troca o tamanho do card que não tiver width na class */
 .custom-width{
-  width: 12rem;
+  width: 11.5rem;
 }
 
 @media only screen and (max-width: 768px){
@@ -267,38 +329,20 @@
 
 .infoFooter{
   background-color: rgb(29, 115, 139);
-  height: 56vh;
+  height:auto;
+  align-items: center;
 }
 
-/* alinhar com titulo */
-.quemsomos {
+.caixaDoFooter{
   display: flex;
-  align-items: start;
-  flex-direction: column;
-  text-align: start;
-  margin-left: 74px;
-
+  gap: 120px;
+  margin-left: 20%;
+  margin-bottom: 2%;
 }
 
-/* alinhar com titulo*/
-.duvidas{
-  display: flex;
-  align-items: start;
-  flex-direction: column;
-  text-align: start;
-  
-}
-/* alinha o titulo dúvidas */
-.alinhadorfooter{
-  margin-left: -10px;
-}
+.Institucional{
 
-.atendimento{
-  display: flex;
-  align-items: start;
-  flex-direction: column;
-  text-align: start;
-  margin-left:-35px 
+  margin-top: 5%;
 }
 
 li{
@@ -316,7 +360,19 @@ li>a{
   margin-right: 54px;
 }
 
+@media only screen and (max-width: 768px){
+.infoFooter{
+  display: flex;
+  flex-direction: column;
+}
 
+.caixaDoFooter{
+gap: 20px;
+flex-direction: column;
+margin-left: -3%;
+}
+
+}
 
 
 

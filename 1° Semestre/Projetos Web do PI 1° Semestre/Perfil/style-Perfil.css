@@ -271,8 +271,10 @@ margin-right: 10px;
 
 .escrita{
         width:86vw ;
-        height: 8vh;
+        height: 10vh;
         margin-top: 20px;
+        align-items: center;
+        display: flex;
         
 }
 
@@ -301,6 +303,8 @@ margin-right: 10px;
 /* CONTAINER IMAGENS DO CARD TROCA  */
 
 .leituraTroca{
+   
+    height: 44vh;
     margin-top: 10px;
 }
 .imagemCardTroca{

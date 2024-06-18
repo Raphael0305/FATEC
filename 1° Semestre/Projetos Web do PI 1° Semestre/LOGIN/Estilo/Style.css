@@ -107,6 +107,39 @@ body {
 }
 
 
+.linkSite{
+    text-decoration: none;
+    color: black;
+}
+
+.inpute{
+    font-size: 13px;
+    margin-top: 5px;
+    color: white;
+}
+
+.descricao>a{
+    
+    font-size: small;
+    text-decoration: none;
+    color: #08a7c6;
+}
+
+.esqueceu{
+    margin-left: 5px;
+}
+
+.cadastrar{
+    margin-left: 20px;
+}
+
+.lembrar{
+    color: #f4f4f4;
+    margin-top: -17px;
+    margin-left: 20px;   
+    font-size: 13px;
+    letter-spacing: 2px;
+}
 @media screen and (max-width: 768px) {
 
 .main-login{
@@ -131,8 +164,10 @@ body {
 .right-login{
     height: 47vh;
     margin-bottom: 35px;
-   
+    margin-top: 30px;
 }
 
-
+.lembrar{
+    margin-left: 26px;
+}
 }
