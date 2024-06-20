@@ -1,0 +1,284 @@
+
+*{
+    max-width: 100%;
+    font-family: 'SwapBook';
+    padding-bottom: 3px;
+}
+
+
+
+@font-face {
+    font-family: 'SwapBook';
+    src: url('Font/helvetica-neue-5/HelveticaNeueLight.otf') format('opentype'); 
+    font-weight: normal; 
+    font-style: normal;
+  }
+/*Fim topo parte 1 */
+
+.MainPerfil{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cardPerfil{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #0c5757;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 2%;
+    border-radius: 10px;
+    border:solid #1c9373 3px;
+}
+/* div que controla posição da foto de perfil e a biografia */
+.imageTextoPerfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* texto Biografia */
+.imageTextoPerfil p{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+.sociais h3{
+    text-align: center;
+}
+
+/* Case de Icon */
+
+.caseIconFace{
+    background-color:#1877f2;
+    width: 12%;
+    height: 45px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;  
+}
+
+.caseIconInsta{
+    background: linear-gradient(45deg,#5935E7,#BD1DD3,#FD15B0,#FF4467,#FF811B);
+    width: 12%;
+    height: 45px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;  
+}
+
+.caseIconTwitch{
+    background-color:#9146ff;
+    width: 12%;
+    height: 45px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Fim icon  */
+
+.icon{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin: auto;
+}
+
+/* texto pequenos abaixo da imagem de perfil - até biografia */
+.localizacao{
+    margin-top: 10px;
+}
+/* versão celular da parte de perfil */
+
+@media screen and (max-width: 768px) {
+    .cardPerfil{
+        width: 95%;
+        margin: auto;
+    }
+
+    .MainPerfil{
+        flex-direction: column;
+    }
+
+    .boxDireita{
+        width: 95%;
+        margin: auto;
+        background-color: black;
+    }
+}
+/* Fim parte esquerda  */
+
+
+/* ==========Inicio parte direita=========== */
+
+
+
+/*estrelas parte 3 */
+
+.estrelas {
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.estrelas>img {
+    width: 250px;
+}
+
+/* fim das estrelas parte 3*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================================================CARDES DISPONIVEL PARA TROCA E LEITURA RECENTE ============================================================*/
+
+.Main2Card{
+
+    width: 100%;
+    display: flex;
+    height: auto;
+    gap: 10px;
+}
+
+/* box lado esquerdo */
+.Box1 {
+    width: 50%;
+    border: solid #1c9373 3px;
+    background-color: #0c5757;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.boxlivros {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.imagelivros {
+    text-align: center; 
+    width: 190px; 
+    height: auto; 
+}
+
+.imagelivros img {
+    border-radius: 10px;
+    width: 100%; 
+    height: auto; 
+}
+
+
+/* mexe no formato da imagens da box1 */
+.imagelivros img{
+    border-radius: 10px;
+    width: 80%;
+}
+
+/* === BOX 2 === */
+.box2{
+    width: 50%;
+    border:solid #1c9373 3px;
+    background-color: #0c5757;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.box2livros{
+   
+    border-radius: 10px;
+    width: 96%;
+    margin: auto;
+    margin-top: 31px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagelivros2 img{
+    border-radius: 10px;
+}
+
+/* box vazia */
+
+
+
+/* div abaixo do livro da div box2 */
+.boxdesricao{
+   
+    width: 96%;
+    border-radius: 10px;
+    background-color: #277676;
+    margin: auto;
+    margin-top: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    
+}
+
+.containerTexto{
+    display: flex;
+    gap: 30px;
+    margin-top: 6px;
+}
+@media screen and (max-width: 768px) {
+.Main2Card{
+    flex-direction: column;
+}
+
+.Box1{
+    width: 95%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.box2{
+    width: 95%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.imagelivros img{
+    border-radius: 10px;
+    width: 100px;
+}
+
+.boxdesricao{}
+}
