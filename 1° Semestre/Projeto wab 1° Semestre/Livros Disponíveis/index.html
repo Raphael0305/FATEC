@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img-Site/ICO/LOGO_DO_LEO-removebg-preview.ico">
+    <title>SwapBook</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-bran" href="#">
+                    <img src="assets/Logo/LOGO_DO_LEO-removebg-preview.png" alt="" width="100">
+                </a>
+                <form class="d-flex w-50" role="search">
+                    <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search" ima>
+                </form>
+                <button class="navbar-toggler mt-1" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-size: 2rem;">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <div class="dropdown mt-3">
+                                <button type="button" class="btn btn-info"><a href="https://swapbookie.netlify.app/" style="text-decoration: none; color: rgb(0, 0, 0);">Home</a></button>
+                                <button class="btn btn-secondary btn-info dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Paél
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="https://perfilswapbook.netlify.app/">Perfil</a></li>
+                                    <li><a class="dropdown-item" href="#">Editar Perfil</a></li>
+                                    <li><a class="dropdown-item" href="#">Amigos</a></li>
+                                </ul>
+                                <li class="nav-item">
+                                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"
+                                        style="font-size: 2rem; color:#1E7364;">Troca</h5>
+                                    <a class="nav-link active" aria-current="page" href="#">Emprestar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Gerenciar trocas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"
+                                        style="font-size: 2rem; color:#1E7364;">Livros
+                                    </h5>
+                                   
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Livros para Disponíveis </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Recomendados</a>
+                                </li>
+                                <h5 class="offcanvas-title mt-4" id="offcanvasNavbarLabel"
+                                    style="font-size: 2rem; color:#1E7364;">
+                                    Auxíliares</h5>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Configuração</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Reclame aqui</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Tema</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="divisor">
+            <div class="navMenu shadow p-3 mb-5 bg-body-tertiary rounded mt-5">
+                <h5>Categorias</h5>
+                <form>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="ficcao">
+                        <label class="form-check-label" for="ficcao">
+                            Ficção
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="romance">
+                        <label class="form-check-label" for="romance">
+                            Romance
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="fantasia">
+                        <label class="form-check-label" for="fantasia">
+                            Fantasia
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="suspense">
+                        <label class="form-check-label" for="suspense">
+                            Suspense
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="aventura">
+                        <label class="form-check-label" for="aventura">
+                            Aventura
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="misterio">
+                        <label class="form-check-label" for="misterio">
+                            Mistério
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="historia">
+                        <label class="form-check-label" for="historia">
+                            História
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="autoajuda">
+                        <label class="form-check-label" for="autoajuda">
+                            Autoajuda
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="biografia">
+                        <label class="form-check-label" for="biografia">
+                            Biografia
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="ciencia">
+                        <label class="form-check-label" for="ciencia">
+                            Ciência
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="aventura">
+                        <label class="form-check-label" for="aventura">
+                            HQs
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="aventura">
+                        <label class="form-check-label" for="aventura">
+                            Mangas
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="aventura">
+                        <label class="form-check-label" for="aventura">
+                            Programação
+                        </label>
+                    </div>
+                    <div class="inputss">
+                        <label for="Cidade">Cidade</label>
+                        <br>
+                        <input type="text" placeholder="Cidade">
+                    </div>
+                </form>
+            </div>
+            <div class="mainContent">
+                <div class="container mt-5">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <div class="card">
+                                <img src="assets/livros fantasia/alice.png" class="card-img-top" alt="livro1">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title text-center">Alice no pais dos pesadelos</h5>
+                                    <hr>
+                                    <p class="card-text text-center" style="font-size: 2rem;">4,5 <img src="assets/Icones/estrela- Qualidade.png" alt="" width="40" style="margin-top: -4%;"></p>
+                                    <hr>
+
+                                    <button type="button" class="btn btn-info centente">EMPRESTAR</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="assets/livros fantasia/Aneis.png" class="card-img-top" alt="livro2">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title text-center">Senhor dos Anéis</h5>
+                                    <hr>
+                                    <p class="card-text text-center" style="font-size: 2rem;">4,5 <img src="assets/Icones/estrela- Qualidade.png" alt="" width="40" style="margin-top: -4%;"></p>
+                                    <hr>
+
+                                    <button type="button" class="btn btn-info centente">EMPRESTAR</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="assets/livros fantasia/Eragon feito.png" class="card-img-top" alt="livro3">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title text-center">Eragon</h5>
+                                    <hr>
+                                    <p class="card-text text-center" style="font-size: 2rem;">4,5 <img src="assets/Icones/estrela- Qualidade.png" alt="" width="40" style="margin-top: -4%;"></p>
+                                    <hr>
+
+                                    <button type="button" class="btn btn-info centente">EMPRESTAR</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="assets/Capas de livros/Coraline.png" class="card-img-top" alt="livro4">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title text-center">Coraline </h5>
+                                    <br>
+                                    <hr>
+                                    <p class="card-text text-center" style="font-size: 2rem;">4,5 <img src="assets/Icones/estrela- Qualidade.png" alt="" width="40" style="margin-top: -4%;"></p>
+                                    <hr>
+
+                                    <button type="button" class="btn btn-info centente">EMPRESTAR</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="assets/Capas de livros/Harry Potter e a pedra filosofal .png" class="card-img-top" alt="livro5">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title text-center">Harry Potter e a pedra filosofal</h5>
+                                    <hr>
+                                    <p class="card-text text-center" style="font-size: 2rem;">4,5 <img src="assets/Icones/estrela- Qualidade.png" alt="" width="40" style="margin-top: -4%;"></p>
+                                    <hr>
+
+                                    <button type="button" class="btn btn-info centente">EMPRESTAR</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <img src="assets/Capas de livros/Witcher.png" class="card-img-top" alt="livro6">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title text-center">The Wticher a torre da Andorinha</h5>
+                                    <hr>
+                                    <p class="card-text text-center" style="font-size: 2rem;">4,5 <img src="assets/Icones/estrela- Qualidade.png" alt="" width="40" style="margin-top: -4%;"></p>
+                                    <hr>
+                                    <button type="button" class="btn btn-info centente">EMPRESTAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<div class="paginacao">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Proximo</a></li>
+        </ul>
+    </nav>
+</div>
+
+    <footer>
+          <!--Parte cinza-->
+  <div class="cadastroEmail">
+    <div class="tituloEmail">
+      SwapBook
+    </div>
+    <div class="texto">
+      <p>cadastre-se para receber novidades
+      </p>
+    </div>
+    <div class=" input-group flex-nowrap w-75 p-3">
+      <span class="input-group-text" id="addon-wrapping">@</span>
+      <input type="text" class="form-control" placeholder="Email" aria-label="Username"
+        aria-describedby="addon-wrapping">
+      <button type="button" class="btn btn-info">Enviar</button>
+    </div>
+
+  </div><!-- fim da parte cinza Parte cinza-->
+
+
+  <div class="infoFooter container-fluid d-flex">
+    <div class="caixaDoFooter">
+
+      <div class="Institucional">
+        <h4> INSTITUCIONAL</h4>
+        <li><a href="">Quem Somos</a></li>
+        <li><a href="">Escolas parceiras</a></li>
+      </div>
+
+      <div class="Institucional">
+        <h4> DÚVIDAS</h4>
+        <li><a href="">Política de privacidade</a></li>
+        <li><a href="">Termos de Uso</a></li>
+        <li><a href="">Perguntas Frequentes</a></li>
+      </div>
+
+      <div class="Institucional">
+        <h4>ATENDIMENTO AO CLIENTE</h4>
+        <li><a href=""><img src="img-Site/icones/agent.png" alt="" width="20">SAC:4002-8922</a></li>
+        <li><a href=""><img src="img-Site/icones/phone.png" alt="" width="20">(19) 99873-8700</a></li>
+        <li><a href=""><img src="img-Site/icones/phone.png" alt="" width="20">(19) 99458-7000</a></li>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer_copyright">
+    &#169
+    2024 todos os direitos reservados
+  </div>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,292 @@
+/* ----NAVBAR----- */
+
+.home {
+  margin-left: 4%;
+}
+
+.home>li>a {
+  font-size: 2rem;
+  color: rgb(20, 122, 122);
+}
+
+
+.navMenu {
+  width: 30%;
+  height: 40%;
+  background-color: hsl(169, 59%, 28%);
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px
+}
+
+.inputDecora {
+  border-radius: 5px;
+  background-color: #224d45;
+}
+
+.inputss {
+  margin-top: 8.5%;
+}
+
+.divisor {
+  display: flex;
+  gap: 15px;
+}
+
+/* Colunas de livros */
+
+.partelivrosMain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.gradeLivros {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .navMenu {
+    width: 35%;
+
+  }
+
+  .inputDecora {
+    width: 100%;
+  }
+
+  .divisor {
+    gap: -1px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+}
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.navMenu {
+  width: 20%;
+  float: left;
+  padding: 20px;
+}
+
+.mainContent {
+  width: 80%;
+  float: right;
+}
+
+@media (max-width: 768px) {
+
+  .navMenu,
+  .mainContent {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+}
+
+
+/* PAGINAÇÃO */
+
+.paginacao {
+  width: 100%;
+  margin-top: 40px;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+
+/* FOOTER */
+
+.cadastroEmail {
+  margin-top: 50px;
+  background-color: rgb(108, 108, 118);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 9vh;
+  gap: 30px;
+}
+
+
+/* tamnho da fonte */
+.tituloEmail {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-left: 30px;
+}
+
+
+/* margin de cada texto e margin pra centralizar */
+.texto {
+  margin-top: 13px;
+  margin-left: 30px;
+}
+
+
+/* div para forma o quadrado do footer */
+
+.infoFooter {
+  background-color: rgb(29, 115, 139);
+  height: auto;
+  align-items: center;
+}
+
+.caixaDoFooter {
+  display: flex;
+  gap: 120px;
+  margin-left: 20%;
+  margin-bottom: 2%;
+}
+
+.Institucional {
+
+  margin-top: 5%;
+}
+
+li {
+  list-style: none;
+}
+
+li>a {
+  text-decoration: none;
+  color: rgb(199, 199, 199);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.duvidas {
+  margin-right: 54px;
+}
+
+
+
+
+/* Footer Cop */
+
+
+.footer_copyright {
+  background-color: #18596b;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  padding-bottom: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .infoFooter {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .caixaDoFooter {
+    gap: 20px;
+    flex-direction: column;
+    margin-left: -3%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+  /* div cinza */
+  .cadastroEmail {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* titulo partece cinza */
+  .tituloEmail {
+    font-size: 3rem;
+    margin-left: 10px;
+  }
+
+  /* texto do cadastro de email */
+  .texto {
+    font-size: 2rempx;
+  }
+
+
+
+
+  /* tamanho do input */
+
+  .inpurte {
+    width: 30%;
+  }
+
+  .infoFooter {
+    background-color: rgb(29, 115, 139);
+    height: 100%;
+  }
+
+  .duvidas {
+    margin-right: 44px;
+  }
+
+  .duvidaMain {
+    margin-left: 100px;
+  }
+
+
+
+
+}
+
+@media only screen and (max-width: 768px) {
+  .imageGenero {
+    cursor: pointer;
+    width: 150px;
+  }
+
+  .containerImage {
+    margin-left: 0px;
+    width: 100%;
+    height: 67vh;
+  }
+
+  .generoImage {
+    background-color: #123430;
+    border: 5px solid #1E7364;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .tituloGenero {
+
+    margin-top: 80px;
+    font-size: 3rem;
+
+  }
+}
