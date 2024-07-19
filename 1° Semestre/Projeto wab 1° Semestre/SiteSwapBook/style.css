@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    /* colocando a font popoins no site */
+}
+
+
+li {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbarMain {
+    /* propriedades da navbar  */
+    position: fixed;
+    /* para fixar a navbar  */
+    top: 0;
+    /* para falar que ela vai ficar no topo   */
+    width: 100%;
+    /*  dei o tamanho para pegar a tela tod a */
+    z-index: 100000;
+    /*  para colocar a navbar na frente dos outros elementos  */
+}
+
+.pesquisanav {
+    width: 50%;
+    display: flex;
+    gap: 5px;
+}
+
+.pesquisanav>input {
+    /* tamanho do input */
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    height: 35px;
+}
+
+.pesquisanav>button {
+    /* mudando caracteristicas do botão */
+    border: #0C5757 1px solid;
+    border-radius: 5px;
+    color: #1C9373;
+    background-color: transparent;
+    outline: none;
+}
+
+input:focus {
+    /* para tirar o bilho de quando clica na barra de pesquisa */
+    outline: none;
+}
+
+.pesquisanav>button:hover {
+    /* pra mudar quando coloca o mouse  por cima do botão */
+    color: white;
+    background-color: #0C5757;
+    transition: 1s;
+}
+
+.item {
+    /* Caixa do Carrosel  */
+    margin-top: 7%;
+    z-index: 1;
+    /*  para colocar ele atras da navbar e não atrapalhar  */
+}
+
+
+
+
+/* Recomandados do Dia  */
+
+/* Inicio dos Cards */
+
+.titulosSite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    /*  para deixar o elemento no meio da tela  */
+}
+
+.titulosSite h2 {
+    font-weight: 700;
+}
+
+.linha {
+    flex: 1;
+    border: solid 1px rgb(146, 143, 143);
+    width: 30%;
+    margin: 2px;
+}
+
+.CardDoDia {
+    /* Caixa do card   */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 4%;
+}
+
+.card1,
+.card2 {
+    /* altera as caracterista dos cards  */
+    flex: 1;
+    /* Para deixar do mesmo tamanho */
+    border: solid 2px rgb(107, 106, 104);
+    /* Borda do card */
+    margin: 1%;
+    /* margin do canto e do Titulo */
+    width: 100%;
+    display: flex;
+    border-radius: 5px;
+
+}
+
+.boxcard {
+    display: flex;
+    width: 100%;
+}
+
+.img {
+    width: 140%;
+    /* Tamanho de espaço que a imagem vai pegar na div  */
+}
+
+.img img {
+    width: 100%;
+    /* tamanho da imagem em si */
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    /* Borda no canto da imagens  */
+}
+
+.textCard {
+    /* box que aloca todos os texto do card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slide-in-right 1s forwards;
+    animation-delay: 0.8s;
+}
+
+.textCard.animate {
+    /* Adiciona a animação ao adicionar a classe .animate */
+    opacity: 1;
+    transform: translateX(0);
+    animation: slide-in-right 1s forwards;
+}
+
+@keyframes slide-in-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.textCard h2 {
+    /* modifica todos os elementos do TItulo do card */
+    margin-top: 3px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.descricaoCard {
+    margin-left: 1%;
+}
+
+.divisor {
+    /* as linha que divide o texto da nota e a nota do botão */
+    border: 1px solid rgb(184, 183, 182);
+    width: 100%;
+}
+
+.notaCard {
+    margin-top: 2%;
+    font-size: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.notaCard img {
+    margin-bottom: 2.2%;
+    width: 70px;
+}
+
+.textCard button {
+    margin-bottom: 2%;
+    margin-top: 2%;
+    border: none;
+    background-color: #0DCAF0;
+    border-radius: 5px;
+    padding: 7px 80px;
+}
+
+.textCard button:hover {
+    background-color: #77d0e2;
+    transition: 0.7s;
+}
+
+/* Fim dos cards */
+
+
+/* GENEROS */
+
+
+.boxGenero {
+    width: 90%;
+    margin: 3% auto;
+    border: solid 3px #1C9373;
+    border-radius: 10px;
+    background-color: #0C5757;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+
+.tituloGenero {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #05CAC9;
+}
+
+
+.boxIbagens1,
+.boxIbagens2 {
+    flex: 1;
+    /* Para modificar as 2 ao mesmo tempo e ficar do mesmo tamamnjho  */
+    display: flex;
+    gap: 110px;
+    /* Distanciamento entre as imagens */
+}
+
+
+/*  */
+.ibagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ibagens img {
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* link ver mais  */
+.linke {
+    width: 90%;
+    display: flex;
+    justify-content: end;
+}
+
+/* ======== */
+/* CARROSSEL */
+
+.carrosselLivros {
+    /* caixa fora do carrosel  */
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    /* Mexendo na caixa do carrosel  */
+    width: 88%;
+    position: relative;
+}
+
+.cardesItem {
+    /* fazendo o local de onde fica os livros */
+    display: flex;
+    height: 40%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(145, 145, 145);
+    padding-bottom: 5%;
+    border-radius: 10px;
+}
+
+.textoLivros {
+    /* Mexendo na caixa onde vai ficar a escrita   */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgCard img {
+    /* mexendo na imagem */
+    width: 100%;
+    border-radius: 10PX;
+    height: 50%;
+    object-fit: cover;
+}
+
+.textoLivros h2 {
+    /* Mexendo na titulo do livro  */
+    margin-top: 9%;
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.textoLivros button {
+    /* Mexendo no botão*/
+    border: none;
+    padding: 7px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #0DCAF0;
+    letter-spacing: 2px;
+}
+
+/* |===============| */
+/* |AUTORES EM ALTA|*/
+/* |===============| */
+
+
+.boxAutores {
+    margin-top: 5%;
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.autores {
+    border: 2px solid rgb(162, 162, 162);
+}
+
+.BoxCardAutores {
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    gap: 30px;
+}
+
+.fotoAutor img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.textosAutores {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textosAutores p {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+
+/* CELULA */
+@media (max-width: 768px) {
+
+    .item {
+        margin-top: 25%;
+    }
+
+    .pesquisanav>button {
+        /* Esconder Botão de pesquisa na navbar */
+        display: none;
+    }
+
+    /* CARDS */
+
+    .boxcard {
+        flex-direction: column;
+    }
+
+    .img {
+        width: 180%;
+    }
+
+    .textCard {
+        font-size: 10px;
+    }
+
+    .notaCard {
+        font-size: 2rem;
+    }
+
+    .notaCard img {
+        width: 50px;
+    }
+
+    .ibagens img {
+        width: 80px;
+
+    }
+
+    .boxIbagens1,
+    .boxIbagens2 {
+        gap: 55px;
+    }
+
+
+    /*|===================| */
+    /*|=== Carrossel =====| */
+    /*|===================| */
+
+    .textoLivros h2 {
+        margin-top: 9%;
+        font-size: 1.6rem;
+    }
+
+    .carrosselLivros {
+        height: auto;
+    }
+}
+
+
+/* footer */
+
+.cadastroEmail {
+    margin-top: 50px;
+    background-color: rgb(108, 108, 118);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 9vh;
+    gap: 30px;
+}
+
+
+/* tamnho da fonte */
+.tituloEmail {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-left: 30px;
+}
+
+
+/* margin de cada texto e margin pra centralizar */
+.texto {
+    margin-top: 13px;
+    margin-left: 30px;
+}
+
+
+/* div para forma o quadrado do footer */
+
+.infoFooter {
+    background-color: #1d738b;
+    height: auto;
+    align-items: center;
+}
+
+.caixaDoFooter {
+    display: flex;
+    gap: 120px;
+    margin-left: 20%;
+    margin-bottom: 2%;
+}
+
+.Institucional {
+
+    margin-top: 5%;
+}
+
+li {
+    list-style: none;
+}
+
+li>a {
+    text-decoration: none;
+    color: rgb(199, 199, 199);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.duvidas {
+    margin-right: 54px;
+}
+
+.footer_copyright{
+    width: 100%;
+    text-align: center;
+    background-color: #237d96;
+}
+
+@media only screen and (max-width: 768px) {
+    .infoFooter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caixaDoFooter {
+        gap: 20px;
+        flex-direction: column;
+        margin-left: -3%;
+    }
+
+
+
+    .descricaoCard{
+        font-size: 12px;
+    }
+
+
+
+    /* div cinza */
+    .cadastroEmail {
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* titulo partece cinza */
+    .tituloEmail {
+        font-size: 3rem;
+        margin-left: 10px;
+    }
+
+    /* texto do cadastro de email */
+    .texto {
+        font-size: 2rempx;
+    }
+
+
+
+
+    /* tamanho do input */
+
+    .inpurte {
+        width: 30%;
+    }
+
+    .infoFooter {
+        background-color: #1d738b;
+        height: 100%;
+    }
+
+    .duvidas {
+        margin-right: 44px;
+    }
+
+    .duvidaMain {
+        margin-left: 100px;
+    }
+
+}

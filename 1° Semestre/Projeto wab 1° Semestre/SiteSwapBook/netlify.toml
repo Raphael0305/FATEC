@@ -1,4 +1,0 @@
-[[redirects]]
-from = "/*"
-to = "/site.html"
-status = 200

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body data-bs-theme="dark">
+        <header class="navbarMain">
+            <nav class="navbar bg-body-tertiary mainmain">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img src="img/Logo/LOGO_DO_LEO-removebg-preview.png" alt=""
+                            class="imagecard" width="120"></a>
+
+                    <div class="pesquisanav">
+                        <input type="text" placeholder="Pesquisar">
+                        <button>Pesquiar</button>
+                    </div>
+
+                    <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-size: 2rem;">Menu</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                
+                
+                
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                
+                            <div class="dropdown mt-3">
+                              <button class="btn btn-secondary btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Paél
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://perfilswapbook.netlify.app/">Perfil</a></li>
+                                <li><a class="dropdown-item" href="#">Editar Perfil</a></li>
+                                <li><a class="dropdown-item" href="#">Amigos</a></li>
+                              </ul>
+                
+                
+                
+                              <li class="nav-item">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-size: 2rem; color:#1E7364;">Troca</h5>
+                                <a class="nav-link active" aria-current="page" href="#">Emprestar</a>
+                              </li>
+                
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Gerenciar trocas</a>
+                              </li>
+                
+                
+                              <li class="nav-item">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-size: 2rem; color:#1E7364;">Livros
+                                </h5>
+                              </li>
+                
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="https://disponivelalugar.netlify.app/">Livros
+                                  Disponíveis</a>
+                              </li>
+                
+                              <li class="nav-item">
+                                <a class="nav-link active" href="#">Recomendados</a>
+                              </li>
+                
+                
+                              <h5 class="offcanvas-title mt-4" id="offcanvasNavbarLabel" style="font-size: 2rem; color:#1E7364;">
+                                Auxíliares</h5>
+                
+                              <li class="nav-item">
+                                <a class="nav-link active" href="#">Configuração</a>
+                              </li>
+                
+                              <li class="nav-item">
+                                <a class="nav-link active" href="#">Reclame aqui</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" href="https://loginswapbook.netlify.app/">Finalizar Sessão</a>
+                              </li>
+                            </div>
+                
+                          </ul>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="item">
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/carousel/1717250321080-04290237012325746.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel/diversidade.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel/1717250397929-0006847046187805628.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div> <!-- Fim carrossel -->
+
+
+
+
+            <!-- Inicio Card do Dia -->
+
+            <div class="CardDoDia"> <!-- Caixa do que ajusta posição dos card-->
+
+                <div class="titulosSite"> <!-- Caixa de Titulo -->
+                    <div class="linha"></div> <!-- para colcoar a linha -->
+                    <h2>Recomendados do Dia</h2>
+                    <div class="linha"></div>
+                </div>
+
+
+                <div class="boxcard"> <!-- BOX ONDE FICA TODOS OS CARD -->
+
+                    <div class="card1">
+                        <div class="img">
+                            <img src="img/Capas de livros/Arthur lewin.jpeg" width="100%" alt="" class="imagecard">
+                        </div>
+
+                        <div class="textCard">
+                            <h2>The Beginning After the End</h2>
+                            <p class="descricaoCard">The Beginning After the End é uma web novel sul-coreana que segue a
+                                vida de Arthur Leywin, um ex-rei que reencarna em um mundo de magia. Ele busca
+                                equilibrar
+                                suas novas habilidades com responsabilidades familiares enquanto enfrenta desafios
+                                mágicos e
+                                políticos.</p>
+                            <div class="divisor"></div>
+                            <p class="notaCard">5,0<img src="img/Icones/estrela- Qualidade.png" alt=""
+                                    class="imagecard">
+                            </p>
+                            <div class="divisor"></div>
+                            <button>EMRPESTAR</button>
+                        </div>
+
+                    </div>
+
+                    <div class="card2">
+
+                        <div class="img">
+                            <img src="img/Capas de livros/Coraline.png" width="100%" alt="" class="imagecard">
+                        </div>
+
+                        <div class="textCard">
+                            <h2>Coraline</h2>
+                            <p class="descricaoCard">Coraline é um livro de Neil Gaiman sobre uma menina que descobre
+                                uma
+                                porta secreta em sua casa levando a uma versão alternativa, sinistra, de sua vida, onde
+                                uma
+                                mãe aparentemente perfeita tenta prendê-la para sempre.</p>
+                            <div class="divisor"></div>
+                            <p class="notaCard">5,0<img src="img/Icones/estrela- Qualidade.png" alt=""
+                                    class="imagecard">
+                            </p>
+                            <div class="divisor"></div>
+                            <button>EMRPESTAR</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!-- Fim box card -->
+
+            <div class="boxGenero">
+
+                <div class="tituloGenero">GÊNERO</div>
+
+                <div class="boxIbagens1">
+
+                    <div class="ibagens">
+                        <img src="img/imagens de Genêro/estudo.png" alt="" class="imagecard">
+                        <p>Estudo</p>
+                    </div>
+                    <div class="ibagens">
+                        <img src="img/imagens de Genêro/Fantasia.png" alt="" class="imagecard">
+                        <p>Fantasia</p>
+                    </div>
+                    <div class="ibagens">
+                        <img src="img/imagens de Genêro/Mistreio.png" alt="" class="imagecard">
+                        <p>Misterio</p>
+                    </div>
+
+
+                </div>
+
+                <div class="boxIbagens2">
+
+                    <div class="ibagens">
+                        <img src="img/imagens de Genêro/Romance.png" alt="" class="imagecard">
+                        <p>Romance</p>
+                    </div>
+                    <div class="ibagens">
+                        <img src="img/imagens de Genêro/Terror.png" alt="" class="imagecard">
+                        <p>Terror</p>
+                    </div>
+                    <div class="ibagens">
+                        <img src="img/imagens de Genêro/Mistreio.png" alt="" class="imagecard">
+                        <p>Misterio</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carrosel de Livros -->
+
+            <div class="titulosSite"> <!-- Caixa de Titulo -->
+                <div class="linha"></div> <!-- para colcoar a linha -->
+                <h2>Livros disponíveis</h2>
+                <div class="linha"></div>
+            </div>
+            <div class="linke"><a href="https://disponivelalugar.netlify.app/">Ver Mais</a></div>
+            <div class="carrosselLivros">
+
+
+                <div class="swiper">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide cardesItem">
+                            <div class="imgCard">
+                                <img src="img/Capas de livros/Coraline.png" alt="">
+                            </div>
+                            <div class="textoLivros">
+                                <h2 title="Coraline">Coraline</h2>
+                                <button>EMPRESTAR</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide cardesItem">
+                            <div class="imgCard">
+                                <img src="img/Capas de livros/Attack ontitan.png" alt="">
+                            </div>
+                            <div class="textoLivros">
+                                <h2 title="Attack on Titan">Attack on Titan</h2>
+                                <button>EMPRESTAR</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide cardesItem">
+                            <div class="imgCard">
+                                <img src="img/Capas de livros/Witcher.png" alt="">
+                            </div>
+                            <div class="textoLivros">
+                                <h2 style="text-align: center;" title="The Withcer a torre da Andorinha">The Witcher A
+                                    torre da Andorinha</h2>
+                                <button>EMPRESTAR</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide cardesItem">
+                            <div class="imgCard">
+                                <img src="img/Capas de livros/C++.png" alt="">
+                            </div>
+                            <div class="textoLivros">
+                                <h2 title="C++">C++</h2>
+                                <button>EMPRESTAR</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide cardesItem">
+                            <div class="imgCard">
+                                <img src="img/Capas de livros/Arthur lewin.jpeg" alt="">
+                            </div>
+                            <div class="textoLivros">
+                                <h2 title="The Beginnign After the End">The Beginning After the End</h2>
+                                <button>EMPRESTAR</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide cardesItem">
+                            <div class="imgCard">
+                                <img src="img/Capas de livros/Harry Potter e a pedra filosofal .png" alt="">
+                            </div>
+                            <div class="textoLivros">
+                                <h2 title="Harry Potter e a pedra Filosofal">Harry Potter e a pedra filosofal</h2>
+                                <button>EMPRESTAR</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+
+                    <div class="swiper-button-prev wiper-slide-button"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                
+            </div>
+
+
+            <!--==== Autores ==== -->
+
+
+            <div class="boxAutores">
+
+                <div class="titulosSite"> <!-- Caixa de Titulo -->
+                    <div class="linha"></div> <!-- para colcoar a linha -->
+                    <h2>Autores em Alta</h2>
+                    <div class="linha"></div>
+                </div>
+
+
+                <div class="BoxCardAutores">
+
+                    <div class="card-group">
+                        <div class="card">
+                            <img src="img/Autores/Lupin.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 2rem; text-align: center;">Maurice Leblanc</h5>
+                                <p class="card-text">Maurice Leblanc foi um escritor francês, nascido em 11 de dezembro de 1864, e falecido em 6 de novembro de 1941. Ele é mais conhecido por criar o icônico personagem Arsène Lupin, o cavalheiro ladrão e mestre do disfarce, que se tornou um dos personagens mais populares da literatura francesa. Leblanc escreveu inúmeras histórias e romances protagonizados por Lupin, combinando mistério, aventura e charme. Sua obra influenciou o gênero de detetive e roubo, e Lupin continua a ser uma figura cultural relevante, inspirando adaptações em diversas mídias.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/Autores/The Begiging.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 2rem; text-align: center;">TurtleMe (Brandon Lee)</h5>
+                                <p class="card-text">TurtleMe é o pseudônimo de Brandon Lee, autor americano conhecido por escrever a popular série de web novels "The Beginning After the End." Combinando elementos de fantasia, ação e aventura, Lee cria histórias cativantes centradas em Arthur Leywin, um rei reencarnado em um mundo mágico. TurtleMe começou a publicar suas obras online, conquistando uma base de fãs dedicada, e a série foi posteriormente adaptada para webtoons, ampliando ainda mais seu alcance e popularidade.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/Autores/The Withcer.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 2rem; text-align: center;">Andrzej Sapkowski</h5>
+                                <p class="card-text">Andrzej Sapkowski é um autor polonês, nascido em 21 de junho de 1948, mais conhecido por criar a série de livros "The Witcher" (em polonês, "Wiedźmin"). Esta série de fantasia segue as aventuras de Geralt de Rívia, um caçador de monstros com habilidades sobrenaturais, em um mundo cheio de intriga política, magia e criaturas míticas. Sapkowski começou a publicar os contos de "The Witcher" na década de 1980, e a série ganhou fama internacional, inspirando adaptações em jogos de vídeo, uma série de TV da Netflix e várias outras mídias. Seu estilo de escrita é conhecido pela mistura de humor, filosofia e crítica social, tornando suas obras apreciadas por uma ampla gama de leitores.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </main>
+
+
+        <footer>
+            <!--Parte cinza-->
+            <div class="cadastroEmail">
+              <div class="tituloEmail">
+                SwapBook
+              </div>
+              <div class="texto">
+                <p>cadastre-se para receber novidades
+                </p>
+              </div>
+              <div class=" input-group flex-nowrap w-75 p-3">
+                <span class="input-group-text" id="addon-wrapping">@</span>
+                <input type="text" class="form-control" placeholder="Email" aria-label="Username"
+                  aria-describedby="addon-wrapping">
+                <button type="button" class="btn btn-info">Enviar</button>
+              </div>
+        
+            </div><!-- fim da parte cinza Parte cinza-->
+        
+        
+            <div class="infoFooter container-fluid d-flex">
+              <div class="caixaDoFooter">
+        
+                <div class="Institucional">
+                  <h4> INSTITUCIONAL</h4>
+                  <li><a href="">Quem Somos</a></li>
+                  <li><a href="">Escolas parceiras</a></li>
+                </div>
+        
+                <div class="Institucional">
+                  <h4> DÚVIDAS</h4>
+                  <li><a href="">Política de privacidade</a></li>
+                  <li><a href="">Termos de Uso</a></li>
+                  <li><a href="">Perguntas Frequentes</a></li>
+                </div>
+        
+                <div class="Institucional">
+                  <h4>ATENDIMENTO AO CLIENTE</h4>
+                  <li><a href=""><img src="img-Site/icones/agent.png" alt="" width="20">SAC:4002-8922</a></li>
+                  <li><a href=""><img src="img-Site/icones/phone.png" alt="" width="20">(19) 99873-8700</a></li>
+                  <li><a href=""><img src="img-Site/icones/phone.png" alt="" width="20">(19) 99458-7000</a></li>
+                </div>
+              </div>
+            </div>
+        
+            <div class="footer_copyright">
+              &#169
+              2024 todos os direitos reservados
+            </div>
+        
+        
+          </footer>
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+
+</html>
